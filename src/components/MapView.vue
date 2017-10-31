@@ -1,21 +1,20 @@
 <template>
-  <div class="mapview">
-    <div class='sidemenu'>
-       <side-menu></side-menu>
+  <main class="mdl-layout__content" style="width: 100%;height: 100%;">
+    <div class="page-content" style="width: 100%!important;height: 100% !important;"><!-- Your content goes here -->
+      <div id ='map'></div>
     </div>
-    <div id = 'map'></div>
-  </div>
+  </main>
 </template>
 <script>
 import mapboxgl from "mapbox-gl";
-import sideMenu from "@/components/SideMenu";
+//import SideMenu from "@/components/SideMenu";
 var WKT = require("terraformer-wkt-parser");
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYTIzMDYwNSIsImEiOiJjajY0Y3IxZXMxcml3MzNtb2JmbDgxaTlvIn0.h79V9gyHk0aHhgOGq42QQQ";
 export default {
-  components: {
-    sideMenu
-  },
+//  components: {
+//    sideMenu
+//  },
   data() {
     return {
       map: null,
@@ -269,30 +268,36 @@ export default {
 };
 </script>
 <style>
-.mapview {
-  position: absolute;
-  top: 61px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-}
-.sidemenu {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  bottom: 0;
-  width: 350px;
-  z-index: 1;
-  background: white;
-  box-shadow: 5px 5px 5px #888888;
-}
-#map {
-  position: absolute;
-  left: 350px;
-  top: 0px;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-}
+/*.mapview {*/
+  /*position: absolute;*/
+  /*top: 61px;*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*right: 0;*/
+  /*z-index: 0;*/
+/*}*/
+/*.sidemenu {*/
+  /*position: absolute;*/
+  /*top: 0px;*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*width: 350px;*/
+  /*z-index: 1;*/
+  /*background: white;*/
+  /*box-shadow: 5px 5px 5px #888888;*/
+/*}*/
+/*#map {*/
+  /*position: absolute;*/
+  /*left: 350px;*/
+  /*top: 0px;*/
+  /*bottom: 0;*/
+  /*right: 0;*/
+  /*z-index: 0;*/
+/*}*/
+
+
+  #map{
+    width: 100%;
+    height: 100%;
+  }
 </style>

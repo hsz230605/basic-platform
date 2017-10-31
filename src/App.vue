@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    
+
     <!-- <header-menu></header-menu> -->
     <!-- <router-view/>   -->
   </div>
@@ -11,13 +11,15 @@
 import 'mapbox-gl/dist/mapbox-gl.css'
 // import mainMenu from '@/components/mainMenu'
 // import MapView from '@/components/MapView'
-// import headerMenu from '@/components/HeaderMenu'
+ import headerMenu from '@/components/HeaderMenu'
 // import loginContent from '@/components/loginContent'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    headerMenu
+  }
 }
 </script>
-
 
 <style>
 
