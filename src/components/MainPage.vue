@@ -8,7 +8,6 @@
       <div class="left_" style="float: left;width: 320px;">
         <sideMenu></sideMenu>
       </div>
-
       <div class="right_" style="background-color: #913d99;margin-left: 320px;">
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
           <!--<main-menu></main-menu>-->

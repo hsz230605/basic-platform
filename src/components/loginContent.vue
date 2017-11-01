@@ -1,6 +1,13 @@
 <template>
     <div class="loginPage">
-        <el-container>
+        <img src='../assets/logo1.png'>
+                <div class="loginContent">
+                    <h3>登录</h3>
+                    <input v-model="input" placeholder="请输入您的电子邮箱"></input>
+                    <button @click="login"type="primary">下一步<i class="el-icon-arrow-right el-icon--right"></i></button>
+                    <span>没有帐号？<a href="#">立即注册</a></span>
+                </div>
+        <!-- <el-container>
             <el-header>
                 <img src='../assets/logo1.png'>
             </el-header>
@@ -12,41 +19,37 @@
                     <span>没有帐号？<a href="#">立即注册</a></span>
                 </div>
             </el-main>
-        </el-container>
+        </el-container> -->
     </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      input: ''
-    }
+      input: ""
+    };
   },
-  methods:{
-      login:function(){
-          this.$router.replace('map')
-      }
+  methods: {
+    login: function() {
+      this.$router.replace("map");
+    }
   }
-}
+};
 </script>
 <style scoped>
-.el-header{
-    margin:0 auto;
-    margin-top:150px;
-}
 button {
-    margin:10px 0;
-    width:500px;
-    }
-.loginContent{
-    margin:0 auto;
-    width: 500px;
+  margin: 10px 0;
+  width: 500px;
 }
-.loginPage{
-    position:absolute;
-    top:0;
-    bottom: 0;
-    width: 100%;
-    background: url('../assets/bg.png') no-repeat;
+.loginContent {
+  margin: 0 auto;
+  width: 500px;
+}
+.loginPage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: url("../assets/bg.png") no-repeat;
 }
 </style>

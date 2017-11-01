@@ -24,11 +24,18 @@ export default new Router({
     //   component: selectMenu
     // },
     {
+      path: '/selectmenu',
+      name: 'SelectMenu',
+      component: selectMenu
+    },
+    {
       path: '/map',
       // meta: {
       //   auth: true
       // },
+      //试验
       component: mainPage,
+      // component: selectMenu,
       children: [{
         path: '/map',
         name: 'MapView',

@@ -47,30 +47,5 @@
 
   </div>
 </template>
-<!--<script>-->
-  <!--export default {-->
-    <!--data() {-->
-      <!--return {-->
-        <!--activeIndex: '1',-->
-        <!--activeIndex2: '1'-->
-      <!--};-->
-    <!--},-->
-    <!--methods: {-->
-      <!--handleSelect(key, keyPath) {-->
-        <!--console.log(key, keyPath);-->
-        <!--if(key==1){-->
-          <!--this.$router.replace('/selectmenu')-->
-          <!--return-->
-        <!--}else if(key ==2){-->
-          <!--this.$router.replace('/map')-->
-          <!--return-->
-        <!--}-->
-      <!--}-->
-    <!--}-->
-  <!--}-->
-<!--</script>-->
-<!--<style scoped>-->
-<!--.right{-->
-  <!--float:right;-->
-<!--}-->
-<!--</style>-->
+
+
